@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-image: url("./assets/Rectangle\ 26\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 263px;
+}
+.header--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+.header--ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.header--ul li:hover {
+  transform: scale(1.1);
+}
+.header--ul a {
+  text-decoration: none;
+  color: white;
+}
+.header--text h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 48px;
+  font-style: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.usluga--img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.usluga--image {
+    width: 100%;
+    max-width: 1256px;
+    height: 450px;
+
+}
+.usluga--str {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+}
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  margin: 150px auto;
+  align-items: center;
+  background-color: #F7ECE1;
+}
+.footer--prava p {
+  color: #333333;
+  font-weight: 500;
+  font-size: medium;
+
+}
+.footer--nav  ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: medium;
+}
+.footer--nav ul a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.50 linear;
+}
+.footer--nav ul :hover {
+ transform: scale(1.05);
+ color: #8D86C9;
+}
+
+.footer--icon {
+  display: flex;
+  gap: 10px;
+  color: #8D86C9;
+}
+.footer--icon i {
+  width: 30px;
+  height: 20.1px;
+  transition: all 0.50s linear;
+  cursor: pointer;
+}
+.footer--icon i:hover {
+  transform: scale(1.06);
+  color: black;
+}
+
+
+/* Media */
+
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 30px 3%;
+  }
+
+  .header--ul, 
+  .footer--nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .header--ul a, 
+  .footer--nav a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .header--content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header--ul {
+    justify-content: center;
+  }
+
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer--nav ul {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer--icon {
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .header, 
+  section, 
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .header--text h1 {
+    font-size: 24px;
+  }
+
+  .header--ul, 
+  .footer--nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .usluga--str h2 {
+    font-size: 20px;
+  }
+}

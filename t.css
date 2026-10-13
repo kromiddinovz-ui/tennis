@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  min-height: 600px;
+  background-image: url("./assets/Rectangle 26.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+.header-content ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.header-content ul li:hover {
+  transform: scale(1.1);
+}
+
+.header-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+.header__midl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+
+.header__midl h1 {
+  font-size: 50px;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.video-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s;
+}
+
+.video-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.header__past {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 70px auto;
+  max-width: 1400px;
+}
+.theme-btn {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 2px solid var(--list-color);
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px; /* Chetlarini dumaloq qilish */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Bosganda silliq o'zgarishi uchun */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 2.Section */
+.card {
+  width: 315px;
+  height: 151px;
+  background-color: #8c82eb;
+  padding: 25px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #ffffff;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-arrow {
+  opacity: 0.85;
+}
+
+/* 2.Section */
+.ikki {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 140px 20px;
+  position: relative;
+}
+.ikki__card {
+  position: relative;
+}
+.ikki__card img {
+  width: 376px;
+  height: 450px;
+  border-radius: 6px;
+}
+.ikki__card :hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease-in-out;
+}
+.ikki__card h3 {
+  width: 300px;
+  position: relative;
+  top: -140px;
+  left: 50px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 27px;
+  margin: 15px 0;
+}
+.ikki__card .like-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Orqasi biroz oqish ko'rinishi uchun */
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: transform 0.2s ease;
+}
+
+/* 3. Bosilganda biroz kattalashish effekti */
+.ikki__card .like-btn:active {
+  transform: scale(1.2);
+}
+
+/* 3.Section */
+
+.klub {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+}
+
+.klub::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -30px;
+  bottom: -30px;
+  width: 55%;
+  background-color: #f5ebe1;
+  z-index: 1;
+}
+
+.klub__card {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+}
+
+.klub__card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.klub__content {
+  position: relative;
+  z-index: 2;
+  width: 45%;
+  padding: 40px;
+}
+
+.klub__content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.klub__content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.klub__content h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.info-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #8c82eb;
+}
+
+.info-list li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* 4.Section */
+
+.sastab {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin: 90px auto;
+}
+
+.sastab--text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.sastab--text h2 {
+  font-size: 30px;
+  color: #111;
+  margin-bottom: 20px;
+}
+.searchInput {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin: 30px auto;
+}
+.sastab--contanier {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.sastab--card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+.sastab--card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.sastab--card img {
+  width: 166px;
+  height: 240px;
+}
+.sastab--card h3 {
+  width: 196px;
+  height: 58px;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: semi-bold;
+  margin: 15px 0 10px;
+  color: #111;
+}
+.sastab--card p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: regular;
+  color: #555;
+  font-weight: 400;
+}
+
+/* 5.Section */
+.usluga {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+.usluga--seni {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.usluga--seni h2 {
+font-weight: 700;
+font-style: bold;
+font-size: 36px;
+
+}
+
+.usluga--text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.span {
+  width: 526px;
+  height: 60px;
+  justify-content: space-between;
+  display: flex;
+  background-color: #8D86C9;
+  font-style: bold;
+  font-size: 21px;
+  font-weight: 600;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: all 0.10s ease-in-out;
+
+}
+.span:hover {
+  transform: scale(1.05);
+
+}
+.span p {
+  font-size: 37px;
+}
+
+.usluga--img {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.usluga--str {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1920px;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  margin: 150px auto;
+  align-items: center;
+  background-color: #F7ECE1;
+}
+.footer--prava p {
+  color: #333333;
+  font-weight: 500;
+  font-size: medium;
+
+}
+.footer--nav  ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: medium;
+}
+.footer--nav ul a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.50 linear;
+}
+.footer--nav ul :hover {
+ transform: scale(1.05);
+ color: #8D86C9;
+}
+
+.footer--icon {
+  display: flex;
+  gap: 10px;
+  color: #8D86C9;
+}
+.footer--icon i {
+  width: 30px;
+  height: 20.1px;
+  transition: all 0.50s linear;
+  cursor: pointer;
+}
+.footer--icon i:hover {
+  transform: scale(1.06);
+  color: black;
+}
+
+
+
+
+/* 6.Footer */
+
+/* Media */
+@media (max-width: 1024px) {
+  .header__midl h1 {
+    font-size: 38px;
+  }
+  .header-content {
+    padding: 20px;
+  }
+  .usluga {
+    gap: 25px;
+    padding: 30px 3%;
+  }
+
+  .footer--nav ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .footer--nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .header__midl h1 {
+    font-size: 30px;
+  }
+  .header__past {
+    margin: 40px 10px;
+  }
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+  .brr {
+    display: none;
+  }
+  .klub {
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+  .klub::before {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .klub__card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .klub__content {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .searchInput {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  .usluga--seni {
+    display: none;
+  }
+  .usluga {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .usluga--seni, 
+  .usluga--img {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer--nav ul {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer--icon {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__midl h1 {
+    font-size: 22px;
+  }
+  .video-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .header-content ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .ikk {
+    display: none;
+  }
+  .ikki__card {
+    width: 336px;
+    height: 400px;
+  }
+  .klub {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .klub__content {
+    padding: 15px 5px;
+  }
+
+  .klub__content h2 {
+    font-size: 22px;
+  }
+
+  .klub__content p,
+  .info-list li {
+    font-size: 13px;
+  }
+  .seeBtn {
+    display: flex;
+  }
+  .usluga {
+    padding: 20px 15px;
+  }
+  .usluga h2, 
+  .usluga--str h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .span {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .footer--nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer {
+    padding: 20px 15px;
+  }
+}
